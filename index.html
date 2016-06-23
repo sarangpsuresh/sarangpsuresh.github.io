@@ -1,0 +1,215 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;">
+<title>Sarang.P</title>
+<link rel="stylesheet" type="text/css" href="theme.css">
+
+</head>
+
+<body>
+<section id="HOME">
+<div id="navi" class="navigation">
+    <ul>
+        <li><a href="#CONTACT">CONTACT</li>
+        <li><a href="#SKILLS">SKILLS</a></li>
+      <li><a href="#ABOUT">ABOUT</a></li>
+      <li><a href="#HOME">HOME</a></li>
+  </ul>
+    <img src="image/logo.png" alt="LOGO" width="134" height="93"></div>
+
+
+<!--1st page-->
+<div id="banner">
+<div id="h3">HI, IM SARANG<br>WEB DEVELOPER & DISIGNER </div>
+
+</div>
+</section>
+<!--ABOUT-->
+
+<section id="ABOUT">
+<div id="about">
+<h1 div id="abt01">.</h1>
+<h1 id="abt02">ABOUT</h1>
+
+<div id="pro-pic">
+<img src="image/IMG_4495.png" alt="pic" class="pic">
+<p class="details">Hi,<br><br>
+
+I'm Sarang P I'm an Web Designer and Web Developer
+I have<br> completed my graduation (B.com with computer Application)<br> at
+Mahathma Gandhi Arts & Science College, Chendayad,kerala.<br><br>
+
+I completed my Web design/development course in Internet Academy.<br>
+It is a Japan based school located in Bangalore, Karanataka<p>
+<button class="button"><a href="SARANG.docx"><span>RESUME </span></a></button
+></div></div></div>
+
+</section>
+
+<!--skills-->
+<section id="SKILLS">
+<div id="skls">
+<h1 id="skl01">.</h1>
+<h1 id="skl02">SKILLS</h1>
+
+<div id="skills">
+<ul class="hd">
+<li>
+<span class="percent" style="margin-left:39px;">  85%</span>
+<img src="photoshop.png" alt="html"/>
+<span class="skill-title"> FIREWORK </span>
+</li>
+
+<li>
+<span class="percent" style="margin-left:40px;"> 70% </span>
+<img src="photoshop.png" alt="html"/>
+<span class="skill-title"> DREAMWEARE </span>
+</li>
+
+<li>
+<span class="percent"style="margin-left: 38px"> 80% </span>
+<img src="photoshop.png" alt="html"/>
+<span class="skill-title"> PHOTOSHOP </span>
+</li>
+
+<li>
+<span class="percent" style="margin-left: 41px;"> 70% </span>
+<img src="photoshop.png" alt="html"/ style="margin: 0px 10px;">
+<span class="skill-title"> HTML/CSS </span>
+</li>	
+
+<li>
+<span class="percent" style="margin-left: 39px;"> 75% </span>
+<img src="photoshop.png" alt="html"/>
+<span class="skill-title"> ILLUSTATOR </span>
+</li>	
+
+<li>
+<span class="percent" style="    margin-left: 40px;"> 85% </span>
+<img src="photoshop.png" alt="html"/>
+<span class="skill-title"> WEBDEVELOP </span>
+</li>	
+
+</ul>
+</div>
+</section>
+ <!--end-->
+
+<section id="WORK">
+   <div id="work">
+       <h1 id="wor01">.</h1>
+          <h1 id="wor02">WORKS</h1>
+             <ul>
+          </ul>
+      <ul class="wor">
+  <li class="work_galary"><img src="Ícone PS.png" alt="ALL"><p>Design</p><p>Photoshop</p></li>
+<li class="work_galary"><img src="Ícone PS.png" alt="LOGO" alt=""><p>Design</p><p>Photoshop</p></li>
+     </ul>
+       </div></div>
+           </section>
+
+<!--end-->
+
+<section id="CONTACT">
+   <div id="contact">
+      <h1 id="cont01">.</h1>
+          <h1 id="cont02">GET IN TOUCH</h1>
+<div id="map"></div>
+          <div id="touch">     
+<div class="for">  
+      
+            <forms>
+            	
+                <table>
+                  <tr>
+                        <td id="name"><input type="text" name="user" placeholder="Name"></td>
+                        <td id="email"><input type="email" name="email" placeholder="Email"></td>
+                  </tr>
+                  <tr id="mass">
+                        <td colspan="2"><input type="massage" name="massage" placeholder="Messages"></td>
+                  </tr>  
+                  <tr id="send">
+                        <td colspan="2"><input type="submit" value="SEND"	class="mt40 subbut"></td>
+                  </tr>
+                </table>
+            </forms>
+            
+            
+            </div>
+        </div>
+  </section>
+       
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+      var myCenter=new google.maps.LatLng(12.9102997,77.6281508,14);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:17,
+  scaleControl: false,
+  scrollwheel: false,
+  navigationControl: false,
+    mapTypeControl: false,
+	streetview:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+ 
+ 
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+</div>
+   </section>
+      <div id="footer">
+          
+              <a href="https://www.facebook.com"><img src="fb.png" width="21" height="41" alt="fb" class="fb"></a>
+                  <a href="https://plus.google.com/105433931367933049645/posts"> <img src="google plus.png" width="40" height="39" alt="goo" class="goo"></a>
+                   <a href="https://twitter.com/?gclid=CjwKEAiAkb-zBRC2upezwuyguQ4SJADZG08vDkFX7tmFSXaQICtMX6xvxG-ri_gC1PWHg-KZV9kyhxoCKijw_wcB&gclsrc=aw.ds"><img src="twit.png" width="48" height="40" alt="twit" class="twit"></a>
+ </div>
+     </body>
+     </style>
+</html>
